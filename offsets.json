@@ -1,0 +1,153 @@
+[
+  {
+    "gameClientSig": {
+      "Patterns": [
+        "A1 ? ? ? ? 68 ? ? ? ? 8B 70 08 E8 ? ? ? ?",
+        "A1 ? ? ? ? 56 83 78 08 00 75 ?"
+      ],
+      "sub_base": true,
+      "read": true,
+      "additional": 0,
+      "id": 999
+    },
+
+    "global::Player": {
+      "Patterns": [
+        "8B 3D ? ? ? ? 3B F7 75 09 5F 5E",
+        "A1 ? ? ? ? 8B 54 24 28 85 C0 0F 84 ? ? ? ?"
+      ],
+      "sub_base": true,
+      "read": true,
+      "additional": 0,
+      "id": 0
+    },
+    "global::ManagerTemplate_AIHero_": {
+      "Patterns": [
+        "A1 ? ? ? ? 8B 54 24 14 53 55",
+        "8B 0D ? ? ? ? E8 ? ? ? ? 85 C0 74 24 05 ? ? ? ? C2 04 00"
+      ],
+      "sub_base": true,
+      "read": true,
+      "additional": 0,
+      "id": 1
+    },
+    "global::ChampionManager": {
+      "Patterns": [
+        "89 1D ? ? ? ? 57 8D 4B 08 89 5C 24 ? C7 03 ? ? ? ? E8 ? ? ? ?",
+        "8B 0D ? ? ? ? 83 C1 18 89 14 24 8B 41 04 3B 41 08"
+      ],
+      "sub_base": true,
+      "read": true,
+      "additional": 0,
+      "id": 2
+    },
+    "global::ManagerTemplate_AIMinionClient_": {
+      "Patterns": [
+        "A1 ? ? ? ? 55 57 8B 78 04 8B 40 08 8D 2C 87 3B FD",
+        "8B 0D ? ? ? ? E8 ? ? ? ? EB 09"
+      ],
+      "sub_base": true,
+      "read": true,
+      "additional": 0,
+      "id": 3
+    },
+    "global::Riot__g_window": {
+      "Patterns": [
+        "A3 ? ? ? ? 6A 64 6A 00",
+        "FF 35 ? ? ? ? 8B CE E8 ? ? ? ? 8D 44 24 24"
+      ],
+      "sub_base": true,
+      "read": true,
+      "additional": 0,
+      "id": 4
+    },
+    "AIBaseCommon::CharacterDataStack": {
+      "Patterns": [
+        "8D 8E ? ? ? ? FF 74 24 4C",
+        "8D 8E ? ? ? ? FF 74 24 ? FF 74 24 ? E8 ? ? ? ? 8B 74 ? ? 85 F6 74 ? 8B C7 F0 0F C1 46 04"
+      ],
+      "sub_base": false,
+      "read": true,
+      "additional": 0,
+      "id": 5
+    },
+    "AIBaseCommon::SkinId": {
+      "Patterns": [
+        "80 BE ? ? 00 00 00 75 ? 0F 31 33 C9 66 C7 86 ? ? ? ? 01 00 89 44 24 ? 33 DB 89 54 24 ? 8A 44 0C ? 41 88 84 33 ? ? 00 00"
+      ],
+      "sub_base": false,
+      "read": true,
+      "additional": 0,
+      "id": 6
+    },
+    "MaterialRegistry::D3DDevice": {
+      "Patterns": [
+        "8B B7 ? ? ? ? FF 70 28 8B 0E 56",
+        "8B 8F ? ? ? ? 88 A7 ? ? ? ? 0F B6 C4 8B 11"
+      ],
+      "sub_base": false,
+      "read": true,
+      "additional": 0,
+      "id": 7
+    },
+    "MaterialRegistry::SwapChain": {
+      "Patterns": [
+        "8D 9F ? ? ? ? 0F 84 ? ? ? ? 8B 0B 6A 00 6A 00 51  8B 01 FF 50 ? 85 C0",
+        "8B 95 ? ? ? ? 0F 10 44 24 ? 56 8B 02 66 0F 73 D8 ?"
+      ],
+      "sub_base": false,
+      "read": true,
+      "additional": 0,
+      "id": 8
+    },
+    "functions::CharacterDataStack__Push": {
+      "Patterns": [
+        "83 EC 74 53 55 56 57 8B F9 8B 47 04 39 07"
+      ],
+      "sub_base": true,
+      "read": false,
+      "additional": 0,
+      "id": 9
+    },
+    "functions::CharacterDataStack__Update": {
+      "Patterns": [
+        "83 EC 1C 56 57 8D 44 24 ? 8B F1 50 8D 44 24 ? 50 8D 44 24 ? 50 8D 44 24 ? 50 8D 44 24 ? 50 8D 44 24 ? 50",
+        "E8 ? ? ? ? 8B 8E ? ? ? ? 5E 8B 01 FF 60 ?"
+      ],
+      "sub_base": true,
+      "read": false,
+      "additional": 0,
+      "id": 10
+    },
+    "functions::Riot__Renderer__MaterialRegistry__GetSingletonPtr": {
+      "Patterns": [
+        "E8 ? ? ? ? FF 73 58 8B C8 8B 10 FF 52 ?",
+        "E8 ? ? ? ? 6A 00 6A 02 6A 00 8B 08 57 8B 51 ? 8B C8 FF D2 89 45 ?"
+      ],
+      "sub_base": true,
+      "read": false,
+      "additional": 0,
+      "id": 11
+    },
+    "functions::translateString_UNSAFE_DONOTUSE": {
+      "Patterns": [
+        "E8 ? ? ? ? 8B 0D ? ? ? ? 83 C4 04 8B F0 6A 0B E8 ? ? ? ? 56 50 55 57",
+        "E8 ? ? ? ? 83 C4 04 8D 4E 0C 8B D0 80 38 00 5E 74 0C"
+      ],
+      "sub_base": true,
+      "read": false,
+      "additional": 0,
+      "id": 12
+    },
+    "functions::GetGoldRedirectTarget": {
+      "Patterns": [
+        "E8 ? ? ? ? 3B F8 5F 5E 5D 0F 94 C0 5B",
+        "E8 ? ? ? ? 85 C0 74 09 8B CE"
+      ],
+      "sub_base": true,
+      "read": false,
+      "additional": 0,
+      "id": 13
+    }
+  }
+]
